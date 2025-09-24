@@ -1,0 +1,405 @@
+/* TOOLTIP STYLES */
+
+/*
+SLIDES 1 & 2 Tooltips: Using the HTML title attribute */
+
+/*
+NOTE: The use of the Title Attribute is NOT good practice since users
+without a mouse cannot access them; ie. Mobile, Tablet, Assitive Tech users.
+*/
+
+[tooltip-title1] {position: relative;}
+[tooltip-title1]:hover:after {
+    opacity: 1;
+    transition: all 0.1s ease 0.2s;
+    visibility: visible;
+}
+[tooltip-title1]:after {
+    content: attr(tooltip-title1);
+    position: absolute;
+    bottom: 150%;
+    left: 150%;
+    width: 600%;
+    padding: 20%;
+    font-size: 150%;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    opacity: 0;
+    visibility: hidden;
+}
+/* Bottom Chevron Down Sign (Black Background) */
+[tooltip-title2] {position: relative;}
+[tooltip-title2]:hover:after {
+    opacity: 1;
+    transition: all 0.1s ease 0.2s;
+    visibility: visible;
+}
+[tooltip-title2]:after {
+    content: attr(tooltip-title2);
+    position: absolute;
+    bottom: 150%;
+    right: 150%;
+    width: 600%;
+    padding: 20%;
+    font-size: 150%;
+    text-align: center;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    opacity: 0;
+    visibility: hidden;
+}
+/* Bottom Chevron Down Sign (White Background) */
+[tooltip-title2w] {position: relative;}
+[tooltip-title2w]:hover:after {
+    opacity: 1;
+    transition: all 0.1s ease 0.2s;
+    visibility: visible;
+}
+[tooltip-title2w]:after {
+    content: attr(tooltip-title2w);
+    position: absolute;
+    bottom: 150%;
+    right: 150%;
+    width: 600%;
+    padding: 20%;
+    font-size: 150%;
+    text-align: center;
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+    opacity: 0;
+    visibility: hidden;
+}
+/* Top Chevron Up Sign (White Background) */
+[tooltip-title3w] {position: relative;}
+[tooltip-title3w]:hover:after {
+    opacity: 1;
+    transition: all 0.1s ease 0.2s;
+    visibility: visible;
+}
+[tooltip-title3w]:after {
+    content: attr(tooltip-title3w);
+    position: absolute;
+    top: -300%;
+    right: 150%;
+    width: 600%;
+    padding: 20%;
+    font-size: 150%;
+    text-align: center;
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/*
+SLIDES 3, 4 and 5 Tooltips
+Code from W3 Schools
+Tooltips with Simple Arows using Classes
+*/
+
+/* Tooltip for Plus Sign */
+.tooltip3-1 {
+    position: absolute;
+    display: inline-block;
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+}
+.tooltip3-1 .tooltiptext3-1 {
+    position: absolute;
+    bottom: 100%;
+    left: 200%;
+    width: 600%;
+    padding: 30%;
+    font-size: 150%;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    visibility: hidden;
+    z-index: 1;
+}
+.tooltip3-1 .tooltiptext3-1::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: 30px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+}
+.tooltip3-1:hover .tooltiptext3-1 {
+    visibility: visible;
+}
+/* Tooltip for Chevron Down (Black Background) */
+.tooltip3-2 {
+    position: absolute;
+    display: inline-block;
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+}
+.tooltip3-2 .tooltiptext3-2 {
+    position: absolute;
+    bottom: 10%;
+    right: 180%;
+    width: 600%;
+    padding: 30%;
+    font-size: 150%;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    visibility: hidden;
+    z-index: 1;
+}
+.tooltip3-2 .tooltiptext3-2::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent black;
+}
+.tooltip3-2:hover .tooltiptext3-2 {
+    visibility: visible;
+}
+/* Tooltip for Chevron Up (Black Background) */
+.tooltip3-3 {
+    position: absolute;
+    display: inline-block;
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+}
+.tooltip3-3 .tooltiptext3-3 {
+    position: absolute;
+    top: -20%;
+    right: 180%;
+    width: 600%;
+    padding: 30%;
+    font-size: 150%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    visibility: hidden;
+    z-index: 1;
+}
+.tooltip3-3 .tooltiptext3-3::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent black;
+}
+.tooltip3-3:hover .tooltiptext3-3 {
+    visibility: visible;
+}
+
+/* Tooltip for Chevron Down (White Background) */
+.tooltip3-2w {
+    position: absolute;
+    display: inline-block;
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+}
+.tooltip3-2w .tooltiptext3-2w {
+    position: absolute;
+    bottom: 10%;
+    right: 180%;
+    width: 600%;
+    padding: 30%;
+    font-size: 150%;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    visibility: hidden;
+    z-index: 1;
+}
+.tooltip3-2w .tooltiptext3-2w::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent white;
+}
+.tooltip3-2w:hover .tooltiptext3-2w {
+    visibility: visible;
+}
+/* Tooltip for Chevron Up (Black Background) */
+.tooltip3-3w {
+    position: absolute;
+    display: inline-block;
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+}
+.tooltip3-3w .tooltiptext3-3w {
+    position: absolute;
+    top: -20%;
+    right: 180%;
+    width: 600%;
+    padding: 30%;
+    font-size: 150%;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    visibility: hidden;
+    z-index: 1;
+}
+.tooltip3-3w .tooltiptext3-3w::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent white;
+}
+.tooltip3-3w:hover .tooltiptext3-3w {
+    visibility: visible;
+}
+
+/*
+SLIDES 6 Tooltips
+Code from https://codepen.io/ainalem/pen/OJRLRPO
+Laser Style Tooltips
+*/
+
+
+/* Tooltip for Chevron Down */
+
+.item-hints {
+    height: 500px;
+    width: 200px;
+    margin: auto;
+    /*border: solid; color: blue;*/
+  }
+  .item-hints .hint {
+    width: 60px;
+    height: 60px;
+    margin: 150px auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Adjust this to move Tip Contents */
+  .item-hints .hint .hint-content {
+    top: -310%;
+    right: 150%; /* 50% */
+    margin-left: 56px;
+  }
+  .item-hints .hint-content {
+    color: white; /* white */
+    width: 300px;
+    position: absolute;
+    z-index: 5;
+    padding: 12px 0;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity 0.7s ease, visibility 0.7s ease;
+    transition: opacity 0.7s ease, visibility 0.7s ease;
+    pointer-events: none;
+    color: white; /* white */
+    /*visibility: hidden;*/
+    pointer-events: none;
+    font-size: 150%;
+    /*line-height: 24px;
+    letter-spacing: 1px;*/
+  
+  }
+  .item-hints .hint:hover .hint-content {
+    color: white; /* white */
+    width: 300px;
+    position: absolute;
+    z-index: 5;
+    padding: 12px 0;
+    opacity: 1;
+    visibility: visible !important;
+    -webkit-transition: opacity 0.7s ease, visibility 0.7s ease;
+    transition: opacity 0.7s ease, visibility 0.7s ease;
+    pointer-events: none;
+    color: white; /* white */
+    /*visibility: hidden;*/
+    pointer-events: none;
+  }
+  /* Horizontal Scrolling Line */
+  .item-hints .hint-content::before {
+    width: 0px;
+    bottom: 0;
+    right: 10px; /* 10px */
+    content: "";
+    background-color: white;  /* white */
+    height: 1px;
+    position: absolute;
+    transition: width 0.4s;
+  }
+  .item-hints .hint:hover .hint-content::before {
+    width: 380px;
+    transition: width 0.4s;
+  }
+  /* Diagonal Line */
+  .item-hints .hint-content::after {
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    /* Rotate Diagonal Line */
+    -webkit-transform: rotate(225deg);
+    transform: rotate(225deg);  /* Rotate Line */
+    bottom: -56px; /* 0px */
+    right: -127px; /* 0px */
+    width: 80px; /* 80px */
+    content: "";
+    background-color: white; /* white */
+    height: 1px;
+    position: absolute;
+    opacity: 1;
+    -webkit-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+    transition-delay: 0s;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+  }
+  .item-hints .hint:hover .hint-content::after {
+    opacity: 1;
+    visibility: visible;
+  }
+  .item-hints .hint[data-position="4"] .hint-content {
+    bottom: 85px;
+    right: 50%;
+    margin-left: 56px;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+

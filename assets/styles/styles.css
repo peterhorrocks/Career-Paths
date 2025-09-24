@@ -1,0 +1,176 @@
+/* See styles_tooltips.css for Tooltip Styling */
+
+/* ======================== */
+/* MAIN PAGE LAYOUT STYLING */
+/* ======================== */
+
+body {
+    font-family: Roboto, sans-serif;
+    width: auto;
+    padding: 0;
+    margin: 0;
+}
+.body-main {
+    overflow: hidden;
+
+}
+
+.container {
+    max-height: 100vh;
+    min-height: 100vh;
+    overflow-y: hidden;
+}
+
+.snapped-container {
+    flex-basis: 100vw;
+    min-height: 100%;
+    overflow-y: scroll;
+    &:not(.smoothsnap) {scroll-snap-type: y mandatory;}
+    max-height: 100vh;
+}
+
+.snapped-container::-webkit-scrollbar {display: none;}
+.snapped-container {-ms-overflow-style: none; scrollbar-width: none;}
+
+.snapped-container > .slide {
+    &:not(.longer) {min-height: 100vh;}
+    scroll-snap-align: start; display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.slide {position: relative;}
+
+.slide-header {position: absolute; top: 2%; left: 2%;}
+/*.slide-header-right {position: absolute; top: 2%; right: 2%;}*/
+
+/* SLIDE 1 and 2 Overlays */
+.slide-overlay-top {position: absolute; top: 5%; left: 50%;}
+.slide-overlay-top-right {
+    position: absolute; 
+    top: 10%; left: 90%;
+}
+.slide-overlay-bottom-centre {
+    position: absolute; 
+    bottom: 10%; left: 50%;
+}
+.slide1-overlay-bottom-centre {
+    position: absolute; 
+    top: 60%; left: 45%;
+}
+.slide-overlay-bottom-right {
+    position: absolute; 
+    bottom: 10%; left: 90%;
+}
+
+/* SLIDE 3 and 4 Overlays */
+.slide3-overlay-top-right {
+    position: absolute; 
+    top: 10%; left: 90%;
+}
+.slide3-overlay-bottom-right {
+    position: absolute; 
+    bottom: 15%; left: 90%;
+}
+.slide3-overlay-bottom-centre {
+    position: absolute; 
+    bottom: 15%; left: 50%;
+}
+
+
+/* ========================= */
+/* MAIN PAGE CONTENT STYLING */
+/* ========================= */
+
+/* Images, Vectors and Icons */
+.slide-image {height: 100vh;}
+
+/* To place svg over image see https://stackoverflow.com/questions/43806515/position-svg-elements-over-an-image */
+svg {width: 15%; color: black;}
+.menu {width: 10%; margin-left: 3%;}
+
+
+/* GLOBAL ATTRIBUTES */
+.bg-black {background-color: black;}
+.bg-white {background-color: white;}
+.black {color: black;}
+.white {color: white;}
+
+.text-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text-section > h2 {
+    font-size: 600%;
+    width: 75%;
+    text-align: center;
+}
+
+
+
+
+
+/* Fonts and Text */
+
+h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 350%;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 250%;
+    margin: 0;
+    padding: 0;
+}
+h3 {
+    font-size: 200%;
+    margin: 0;
+    padding: 0;
+}
+h4 {
+    font-size: 150%;
+    margin-top: 2%;
+    margin-left: 2%;
+    padding: 0;
+}
+
+/* Buttons and Links */
+
+.nav-link {
+    text-decoration: none;
+}
+
+/* Colours */
+.black {color: black;}
+.white {color: white;}
+
+
+
+/* =================== */
+/* PAGE LAYOUT STYLING */
+/* =================== */
+
+.page-header {
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+.page-container {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: 2% 5% 2% 5%;
+}
+
+
+
+
+.image-page-header {
+    width: auto;
+    margin: 0;
+}
