@@ -183,8 +183,8 @@ h4 {
         height: 50vh;
     }
 
-    h2 {
-        font-size: 200%;
+    .text-section > h2 {
+        font-size: 400%;
     }
     h3 {
         font-size: 150%;
